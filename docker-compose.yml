@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  aiogram_template:
+    build:
+      context: .
+      dockerfile: .ci/Dockerfile
+    container_name: aiogram_template
+    command: python main.py
+    environment:
+      - LOG_LEVEL=INFO
+    env_file:
+      - .env
