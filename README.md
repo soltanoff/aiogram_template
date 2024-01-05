@@ -7,6 +7,12 @@
 
 This is just a project template for writing telegram bots. The project has linter, logger, docker, dot-env configured.
 
+## Features
+
+- SQLite (user info storage)
+- custom aiogram middlewares ([middlewares.py](app/bot_controller/middlewares.py))
+- custom aiogram router ([router.py](app/bot_controller/router.py))
+
 ## Command list
 
 - `/help` - view all commands
