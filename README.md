@@ -14,7 +14,6 @@ This is just a project template for writing telegram bots. The project has linte
 - `/hello` - just hello command
 - `/user_info` - just hello command
 
-
 ## How to run
 
 ### Without Docker:
@@ -32,21 +31,4 @@ This is just a project template for writing telegram bots. The project has linte
 
 ## Development tools
 
-### Bandit tool
-
-[Bandit](https://github.com/PyCQA/bandit) is a tool designed to find common security issues in Python code. To do this
-Bandit processes each file, builds an AST from it, and runs appropriate plugins against the AST nodes. Once Bandit has
-finished scanning all the files it generates a report.
-
-```shell
-bandit -r .
-```
-
-### flake8
-
-[flake8](https://github.com/PyCQA/flake8) is a python tool that glues together pycodestyle, pyflakes, mccabe, and
-third-party plugins to check the style and quality of some python code.
-
-```shell
-flake8 .
-```
+More helpful commands in [Makefile](Makefile).
