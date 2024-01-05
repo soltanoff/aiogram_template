@@ -6,8 +6,7 @@ services:
       context: .
       dockerfile: .ci/Dockerfile
     container_name: aiogram_template
-    command: python main.py
     environment:
-      - LOG_LEVEL=INFO
+      - TELEGRAM_API_KEY=$TELEGRAM_API_KEY
     env_file:
       - .env

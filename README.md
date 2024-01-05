@@ -2,10 +2,18 @@
 
 [![\[Telegram\] aiogram live](https://img.shields.io/badge/telegram-aiogram-blue.svg?style=flat-square)](https://t.me/aiogram_live)
 [![Supported python versions](https://img.shields.io/pypi/pyversions/aiogram.svg?style=flat-square)](https://pypi.python.org/pypi/aiogram)
-[![Telegram Bot API](https://img.shields.io/badge/Telegram%20Bot%20API-6.5-blue.svg?style=flat-square&logo=telegram)](https://core.telegram.org/bots/api)
+[![Telegram Bot API](https://img.shields.io/badge/Telegram%20Bot%20API-7.0-blue.svg?style=flat-square&logo=telegram)](https://core.telegram.org/bots/api)
 [![MIT License](https://img.shields.io/pypi/l/aiogram.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
 This is just a project template for writing telegram bots. The project has linter, logger, docker, dot-env configured.
+
+## Command list
+
+- `/help` - view all commands
+- `/start` - base command for user registration
+- `/hello` - just hello command
+- `/user_info` - just hello command
+
 
 ## How to run
 

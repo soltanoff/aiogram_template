@@ -1,0 +1,139 @@
+[tool.poetry]
+name = "aiogram-template"
+version = "1.1.0"
+description = "This is just a project template for writing telegram bots."
+authors = ["Ilia Soltanov piccadillable@gmail.com"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "aiogram-template" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+aiogram = "^3.3.0"
+sqlalchemy = "^2.0.23"
+greenlet = "^3.0.3"
+aiosqlite = "^0.19.0"
+ujson = "^5.9.0"
+
+[tool.poetry.group.dev.dependencies]
+black = { version = ">=22.12.0", allow-prereleases = true }
+isort = "^5.13.2"
+#mypy = "^1.8.0"
+flake8 = "^6.1.0"
+flake8-pyproject = "^1.2.3"
+flake8-bandit = "^4.1.1"
+flake8-broken-line = "^1.0.0"
+flake8-comprehensions = "^3.14.0"
+flake8-debugger = "^4.1.2"
+flake8-docstrings = "^1.7.0"
+flake8-eradicate = "^1.5.0"
+flake8-isort = "^6.1.1"
+flake8-quotes = "^3.3.2"
+flake8-string-format = "^0.3.0"
+flake8-bugbear = "^23.9.16"
+flake8-rst-docstrings = "^0.3.0"
+pylint = "^3.0.3"
+safety = "^2.3.5"
+bandit = "^1.7.6"
+
+[tool.bandit]
+exclude_dirs = [
+    "venv",
+    ".venv",
+]
+
+[tool.flake8]
+max-line-length = 140
+exclude = [
+    "venv/*",
+    ".venv/*",
+]
+ignore = [
+    "C812", # missing trailing comma
+    "D100", # Missing docstring in public module
+    "D101", # Missing docstring in public class
+    "D102", # Missing docstring in public method
+    "D103", # Missing docstring in public function
+    "D104", # Missing docstring in public package
+    "D105", # Missing docstring in magic method
+    "D106", # Missing docstring in public nested class
+    "D107", # Missing docstring in __init__
+    "D401", # First line should be in imperative mood
+    "W503", # line break before binary operator
+]
+
+[tool.pylint.design]
+min-public-methods = 0
+max-public-methods = 50
+max-args = 6
+
+[tool.pylint.format]
+max-line-length = 140
+max-module-lines = 500
+max-locals = 20
+
+[tool.black]
+line-length = 140
+target-version = ['py38']
+exclude = '''
+(
+  \.eggs
+  |\.git
+  |\.hg
+  |\.mypy_cache
+  |\.nox
+  |\.tox
+  |\.venv
+  |venv
+  |_build
+  |buck-out
+  |build
+  |dist
+)
+'''
+
+[tool.isort]
+line_length = 140
+sections = ["FUTURE", "STDLIB", "THIRDPARTY", "FIRSTPARTY", "LOCALFOLDER"]
+multi_line_output = 3
+src_paths = "./app"
+lines_after_imports = 2
+
+[tool.pylint.typecheck]
+ignored-classes = [
+    "ujson",
+]
+
+[tool.pylint."messages control"]
+disable = [
+    "unsubscriptable-object",
+    "broad-exception-caught",
+    "missing-module-docstring",
+    "missing-class-docstring",
+    "missing-function-docstring",
+]
+
+[tool.mypy]
+show_error_codes = true
+show_error_context = true
+pretty = true
+ignore_missing_imports = false
+warn_unused_configs = true
+disallow_subclassing_any = false
+disallow_any_generics = true
+disallow_untyped_calls = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_return_any = true
+follow_imports_for_stubs = true
+namespace_packages = true
+show_absolute_path = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

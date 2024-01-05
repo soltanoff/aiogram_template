@@ -1,16 +1,25 @@
-FROM python:3.10-slim
+FROM python:3.12-slim
 ENV PYTHONUNBUFFERED 0
 
+ENV buildDeps=' \
+        build-essential \
+        musl-dev \
+        gcc \
+    '
+
 RUN apt-get update \
-	&& pip install --upgrade --no-cache-dir pip \
-	&& pip install --upgrade --no-cache-dir wheel \
-	&& pip install --upgrade --no-cache-dir setuptools
+    && apt-get install -y $buildDeps --no-install-recommends \
+    && pip install --upgrade --no-cache-dir pip wheel setuptools poetry
 
-COPY .. /src
-WORKDIR /src
+WORKDIR /app
 
-COPY ../.env.default ./.env
+# will be cached if no changes in this files
+COPY poetry.lock /app/
+COPY pyproject.toml /app/
 
-RUN pip install -r requirements.txt
+RUN poetry config virtualenvs.create false \
+    && poetry install --no-root --no-interaction
+
+COPY app /app
 
 CMD [ "python", "main.py" ]
