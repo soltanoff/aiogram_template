@@ -20,7 +20,7 @@ black = { version = ">=25.9.0", allow-prereleases = true }
 isort = "^7.0.0"
 #mypy = "^1.8.0"
 flake8 = "^7.3.0"
-flake8-pyproject = "^1.2.3"
+flake8-pyproject = "^1.2.4"
 flake8-bandit = "^4.1.1"
 flake8-broken-line = "^1.0.0"
 flake8-comprehensions = "^3.17.0"
