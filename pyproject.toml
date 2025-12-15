@@ -12,7 +12,7 @@ python = "^3.13"
 aiogram = "^3.22.0"
 sqlalchemy = "^2.0.45"
 greenlet = "^3.3.0"
-aiosqlite = "^0.21.0"
+aiosqlite = "^0.22.0"
 orjson = "^3.11.5"
 
 [tool.poetry.group.dev.dependencies]
