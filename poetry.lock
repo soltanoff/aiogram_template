@@ -258,38 +258,39 @@ yaml = ["PyYAML"]
 
 [[package]]
 name = "black"
-version = "25.11.0"
+version = "26.1a1"
 description = "The uncompromising code formatter."
 optional = false
-python-versions = ">=3.9"
+python-versions = ">=3.10"
 groups = ["dev"]
 files = [
-    {file = "black-25.11.0-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:ec311e22458eec32a807f029b2646f661e6859c3f61bc6d9ffb67958779f392e"},
-    {file = "black-25.11.0-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:1032639c90208c15711334d681de2e24821af0575573db2810b0763bcd62e0f0"},
-    {file = "black-25.11.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:0c0f7c461df55cf32929b002335883946a4893d759f2df343389c4396f3b6b37"},
-    {file = "black-25.11.0-cp310-cp310-win_amd64.whl", hash = "sha256:f9786c24d8e9bd5f20dc7a7f0cdd742644656987f6ea6947629306f937726c03"},
-    {file = "black-25.11.0-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:895571922a35434a9d8ca67ef926da6bc9ad464522a5fe0db99b394ef1c0675a"},
-    {file = "black-25.11.0-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:cb4f4b65d717062191bdec8e4a442539a8ea065e6af1c4f4d36f0cdb5f71e170"},
-    {file = "black-25.11.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:d81a44cbc7e4f73a9d6ae449ec2317ad81512d1e7dce7d57f6333fd6259737bc"},
-    {file = "black-25.11.0-cp311-cp311-win_amd64.whl", hash = "sha256:7eebd4744dfe92ef1ee349dc532defbf012a88b087bb7ddd688ff59a447b080e"},
-    {file = "black-25.11.0-cp312-cp312-macosx_10_13_x86_64.whl", hash = "sha256:80e7486ad3535636657aa180ad32a7d67d7c273a80e12f1b4bfa0823d54e8fac"},
-    {file = "black-25.11.0-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:6cced12b747c4c76bc09b4db057c319d8545307266f41aaee665540bc0e04e96"},
-    {file = "black-25.11.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:6cb2d54a39e0ef021d6c5eef442e10fd71fcb491be6413d083a320ee768329dd"},
-    {file = "black-25.11.0-cp312-cp312-win_amd64.whl", hash = "sha256:ae263af2f496940438e5be1a0c1020e13b09154f3af4df0835ea7f9fe7bfa409"},
-    {file = "black-25.11.0-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:0a1d40348b6621cc20d3d7530a5b8d67e9714906dfd7346338249ad9c6cedf2b"},
-    {file = "black-25.11.0-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:51c65d7d60bb25429ea2bf0731c32b2a2442eb4bd3b2afcb47830f0b13e58bfd"},
-    {file = "black-25.11.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:936c4dd07669269f40b497440159a221ee435e3fddcf668e0c05244a9be71993"},
-    {file = "black-25.11.0-cp313-cp313-win_amd64.whl", hash = "sha256:f42c0ea7f59994490f4dccd64e6b2dd49ac57c7c84f38b8faab50f8759db245c"},
-    {file = "black-25.11.0-cp314-cp314-macosx_10_15_x86_64.whl", hash = "sha256:35690a383f22dd3e468c85dc4b915217f87667ad9cce781d7b42678ce63c4170"},
-    {file = "black-25.11.0-cp314-cp314-macosx_11_0_arm64.whl", hash = "sha256:dae49ef7369c6caa1a1833fd5efb7c3024bb7e4499bf64833f65ad27791b1545"},
-    {file = "black-25.11.0-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:5bd4a22a0b37401c8e492e994bce79e614f91b14d9ea911f44f36e262195fdda"},
-    {file = "black-25.11.0-cp314-cp314-win_amd64.whl", hash = "sha256:aa211411e94fdf86519996b7f5f05e71ba34835d8f0c0f03c00a26271da02664"},
-    {file = "black-25.11.0-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:a3bb5ce32daa9ff0605d73b6f19da0b0e6c1f8f2d75594db539fdfed722f2b06"},
-    {file = "black-25.11.0-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:9815ccee1e55717fe9a4b924cae1646ef7f54e0f990da39a34fc7b264fcf80a2"},
-    {file = "black-25.11.0-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:92285c37b93a1698dcbc34581867b480f1ba3a7b92acf1fe0467b04d7a4da0dc"},
-    {file = "black-25.11.0-cp39-cp39-win_amd64.whl", hash = "sha256:43945853a31099c7c0ff8dface53b4de56c41294fa6783c0441a8b1d9bf668bc"},
-    {file = "black-25.11.0-py3-none-any.whl", hash = "sha256:e3f562da087791e96cefcd9dda058380a442ab322a02e222add53736451f604b"},
-    {file = "black-25.11.0.tar.gz", hash = "sha256:9a323ac32f5dc75ce7470501b887250be5005a01602e931a15e45593f70f6e08"},
+    {file = "black-26.1a1-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:6bef30dd59ee2f3cead8676fb20b02eb61e2a62242e1687bb487d83b4f2c4f5d"},
+    {file = "black-26.1a1-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:6718cb8982a2b9be04df81656c7d011fc08ba6ba65dda5fe11fe3bda38968d34"},
+    {file = "black-26.1a1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:8fb482cf11667cd271a900cef5e58648c4511f3e25902cf1d35b4294c6964c99"},
+    {file = "black-26.1a1-cp310-cp310-win_amd64.whl", hash = "sha256:b99fc4c580ade0bc0948e385d39f2c2e6a458d43ac5f58359c071150734ea057"},
+    {file = "black-26.1a1-cp310-cp310-win_arm64.whl", hash = "sha256:eecb51f4723de7f8dcf8152e77e7a4728cfe37d9320ee8dd7a611776ba65cab1"},
+    {file = "black-26.1a1-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:4a53050858fc044511aec05996286803d7eb9ef96eb581a8b8fbeb8a602602c8"},
+    {file = "black-26.1a1-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:afb4ca2d4b97671adb37168826e6d7a05d0202096ba8d5ca964cf95a64f7e717"},
+    {file = "black-26.1a1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:2a156b749b15d29a5ff6ab4b460d88135ae39378d3faa0f7595ca015ab5463a7"},
+    {file = "black-26.1a1-cp311-cp311-win_amd64.whl", hash = "sha256:f3a1123882750cc61488bb7ac75cfe8fcbfdec643e193d0b79716e4d77498b91"},
+    {file = "black-26.1a1-cp311-cp311-win_arm64.whl", hash = "sha256:2a780a7fa4f0096fb71a9a5cd8c0feb125cd0370bc798ad3d8bcfbfc97e42b5b"},
+    {file = "black-26.1a1-cp312-cp312-macosx_10_13_x86_64.whl", hash = "sha256:ad5981deadad3a872a4403f82f49457f4cb2f152efd50f2e5b6dd101a198798e"},
+    {file = "black-26.1a1-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:f84eb4b15c270dac9b8c4a1535653a4cd38dbe30460da6dfe74409edd30e9d6f"},
+    {file = "black-26.1a1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:a559bfcb3388ed2abde1e46eda10c0c71f1efa1caabe91a563b3cd07a525c23e"},
+    {file = "black-26.1a1-cp312-cp312-win_amd64.whl", hash = "sha256:7822a49f2a0150c03bff7102138e503509a70be60fac28a71c0c146295d4b8ce"},
+    {file = "black-26.1a1-cp312-cp312-win_arm64.whl", hash = "sha256:564a123bfe55214391f5ce21180fb95b087fd3c82919dedf20a98e503aaa48a3"},
+    {file = "black-26.1a1-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:65195e7a17a60d28179afb84f074d9e555046303c67ce28058fd8411acd633e8"},
+    {file = "black-26.1a1-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:ff8de0db7770f1d5fed5d62e74dd65718545e7ac0a5c78ffbd7252b87d7b7e10"},
+    {file = "black-26.1a1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:e25b9abacd742b9bb4b2ade57c9e53a3699c7e07074111d110be53abe7b0e574"},
+    {file = "black-26.1a1-cp313-cp313-win_amd64.whl", hash = "sha256:81af15917ab44c028634f296b43400741247fef0d4520d74b4642c028b753540"},
+    {file = "black-26.1a1-cp313-cp313-win_arm64.whl", hash = "sha256:b7e5e95d386266338e5691cf6be49102d3a39387cb9c87443f35262f1f927074"},
+    {file = "black-26.1a1-cp314-cp314-macosx_10_15_x86_64.whl", hash = "sha256:92d1513f5840560edf31b28dc18826b4b627353efd735ab88e633183e3570b99"},
+    {file = "black-26.1a1-cp314-cp314-macosx_11_0_arm64.whl", hash = "sha256:c3d595ed7db33c7a28cb80411d8e9a5a32526183f233ad93fae674c76c4a3060"},
+    {file = "black-26.1a1-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:9479fe206a6bfdd8f450b0f29b283bec1a0cae53412dc5394a4fd52bf1149da4"},
+    {file = "black-26.1a1-cp314-cp314-win_amd64.whl", hash = "sha256:f5f8711ddda89ea7bdb2b10b4924806bbf89d9139bcf78bb8e1a99508ea5bd65"},
+    {file = "black-26.1a1-cp314-cp314-win_arm64.whl", hash = "sha256:ef3c684faf5846f75b935836def55638ae058f3ad08ee55290565bb49916e216"},
+    {file = "black-26.1a1-py3-none-any.whl", hash = "sha256:29e6ef7319e76767d369b58e8cf4a8b9b88a5e841db144f8bdf6ea9e97007cb3"},
+    {file = "black-26.1a1.tar.gz", hash = "sha256:aadb4d751d62016145662d3ffd388f5b33ca87736b3cf2f6c6a1a231a78b3783"},
 ]
 
 [package.dependencies]
