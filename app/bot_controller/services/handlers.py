@@ -4,7 +4,6 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from bot_controller.router import Router
 from models import User
 
-
 router = Router(name=__name__)
 
 

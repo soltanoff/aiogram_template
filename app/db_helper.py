@@ -6,7 +6,6 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from models import User
 
-
 # Common prebuilt queries
 STMT_USER = sa.select(User)
 
