@@ -8,7 +8,6 @@ from sqlalchemy.orm import Mapped, declarative_base, sessionmaker
 
 from settings import DB_NAME
 
-
 STMT_NOW_TIMESTAMP = sa.sql.func.now()  # pylint: disable=not-callable
 
 engine_lite = create_async_engine(f"sqlite+aiosqlite:///{DB_NAME}")
