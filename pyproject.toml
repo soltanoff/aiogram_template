@@ -18,7 +18,7 @@ urllib3 = "^2.6.3"
 aiohttp = "^3.13.5"
 filelock = "^3.25.2"
 jaraco-context = "^6.1.2"
-virtualenv = "^21.2.3"
+virtualenv = "^21.2.4"
 h11 = "^0.16.0"
 
 [tool.poetry.group.dev.dependencies]
